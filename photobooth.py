@@ -53,7 +53,7 @@ def print_image(image_path):
   try:
     im = Image.open(image_path)
     width, height = im.size
-    new_width = 384
+    new_width = 512
     new_height = int((new_width / width) * height)
     im = im.resize((new_width, new_height)).convert("1")
 
